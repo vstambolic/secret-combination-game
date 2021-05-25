@@ -1,0 +1,260 @@
+body {
+    background-color: black;
+    margin-top: 0px;
+}
+
+.container {
+    width: 1000px;
+    height: 97vh;
+    margin: auto;
+}
+
+.text {
+    text-align: justify;
+    color: white;
+    font-family: 'Consolas', 'Courier New', Courier, monospace;
+    width: 100%;
+}
+.pink-text {
+    color: #ff7ac2;
+}
+
+.red-text {
+    color: #C23535;
+}
+
+.white-text {
+    color: white;
+}
+
+.yellow-text {
+    color: #a3a32c;
+}
+
+.pale-text, button:disabled, button:disabled:hover {
+    color: #555555;
+}
+
+.shadow-cyan {
+    background: linear-gradient(90deg, rgba(0, 139, 139, 0.075) 0%, rgba(0, 139, 139, 0) 15%, rgba(0, 139, 139, 0) 85%, rgba(0, 139, 139, 0.075) 100%),
+        linear-gradient(0deg, rgba(0, 139, 139, 0.075) 0%, rgba(0, 139, 139, 0) 15%, rgba(0, 139, 139, 0) 85%, rgba(0, 139, 139, 0.075) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+.pointer-cursor {
+    cursor: pointer;
+}
+
+.page-title {
+    width: 1000px;
+    text-align: center;
+    font-size: 16pt;
+    font-weight: normal;
+    display: block;
+    padding: 10px;
+    margin: 15px auto 0px auto;
+}
+
+
+.content {
+    width: 66%;
+    margin: auto;
+    margin-top: 15px;
+    padding: 40px;
+
+}
+
+/*-------------- Tables --------------*/
+
+.combination-td {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    background: linear-gradient(90deg, rgba(0, 139, 139, 0.075) 0%, rgba(0, 139, 139, 0) 15%, rgba(0, 139, 139, 0) 85%, rgba(0, 139, 139, 0.075) 100%),
+        linear-gradient(0deg, rgba(0, 139, 139, 0.075) 0%, rgba(0, 139, 139, 0) 15%, rgba(0, 139, 139, 0) 85%, rgba(0, 139, 139, 0.075) 100%);
+    width: 50px;
+    height: 50px;
+
+    display: inline-flex;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+.combination-td:last-child {
+    margin-right: 0px;
+}
+.combination-td:hover,
+button:hover {
+    background: linear-gradient(90deg, rgba(255, 122, 194, 0.075) 0%, rgba(255, 122, 194, 0) 15%, rgba(255, 122, 194, 0) 85%, rgba(255, 122, 194, 0.075) 100%),
+        linear-gradient(0deg, rgba(255, 122, 194, 0.075) 0%, rgba(255, 122, 194, 0) 15%, rgba(255, 122, 194, 0) 85%, rgba(255, 122, 194, 0.075) 100%);
+    color: #ff7ac2;
+}
+
+.combination-td-success-red {
+    background: linear-gradient(90deg, rgba(91, 20, 20, 0.4) 0%, rgba(91, 20, 20,  0) 15%, rgba(91, 20, 20,  0) 85%, rgba(91, 20, 20,  0.4) 100%),
+    linear-gradient(0deg, rgba(91, 20, 20, 0.4) 0%, rgba(91, 20, 20,  0) 15%, rgba(91, 20, 20,  0) 85%, rgba(91, 20, 20,  0.4) 100%);
+
+}
+.combination-td-success-yellow {
+    background: linear-gradient(90deg, rgba(163, 163, 44, 0.2) 0%, rgba(163, 163, 44,  0) 15%, rgba(163, 163, 44,  0) 85%, rgba(163, 163, 44,  0.2) 100%),
+    linear-gradient(0deg, rgba(163, 163, 44, 0.2) 0%, rgba(163, 163, 44,  0) 15%, rgba(163, 163, 44,  0) 85%, rgba(163, 163, 44,  0.2) 100%);
+}
+
+
+.symbol {
+    margin: auto;
+    width: 60%;
+    height: 60%;
+    display : none;
+    user-select: none; /* Standard */
+
+}
+#example .symbol {
+    display : inline;
+}
+.success-block {
+    margin: auto;
+    width: 50%;
+    height: 50%;
+}
+
+div .yellow-block {
+    background-color: #a3a32c;
+}
+
+div .red-block {
+    background-color: #5B1414;
+}
+
+#example {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Buttons */
+
+.button-bar {
+    width: 100%;
+    display: inline-block;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+.button-bar button {
+    float: right;
+    margin-left: 10px;
+}
+.vertical-button-bar {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+}
+button {
+   
+    border: none;
+    padding: 5px 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    background: linear-gradient(90deg, rgba(0, 139, 139, 0.075) 0%, rgba(0, 139, 139, 0) 15%, rgba(0, 139, 139, 0) 85%, rgba(0, 139, 139, 0.075) 100%),
+        linear-gradient(0deg, rgba(0, 139, 139, 0.075) 0%, rgba(0, 139, 139, 0) 15%, rgba(0, 139, 139, 0) 85%, rgba(0, 139, 139, 0.075) 100%);
+
+    text-align: center;
+    font-family: 'Consolas', 'Courier New', Courier, monospace;
+    color: white;
+    cursor: pointer;
+}
+
+button:active {
+    color: white;
+}
+
+button:disabled:hover {
+    background: linear-gradient(90deg, rgba(0, 139, 139, 0.075) 0%, rgba(0, 139, 139, 0) 15%, rgba(0, 139, 139, 0) 85%, rgba(0, 139, 139, 0.075) 100%),
+        linear-gradient(0deg, rgba(0, 139, 139, 0.075) 0%, rgba(0, 139, 139, 0) 15%, rgba(0, 139, 139, 0) 85%, rgba(0, 139, 139, 0.075) 100%);
+    cursor: auto;
+}
+
+#settings-tables .combination-table {
+    margin: auto;
+}
+
+
+.table-segment-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.table-segment {
+
+    width: 45%;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: inline-block;
+
+}
+.table-segment:first-child {
+    margin-left: 0px;
+}
+
+.table-segment:last-child {
+    margin-right: 0px;
+}
+
+
+.player-status-segment-container {
+    display: flex;
+    justify-content: center;
+}
+.player-status {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+
+.control-segment-container {
+    white-space: nowrap;
+
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.control-segment {
+    display: flex;
+    justify-content: center;
+}
+
+
+#central-control-button-wrapper {
+    margin-bottom: 10px;
+    margin-left:85px;
+    margin-right:85px;
+}
+
+#central-control-button-wrapper .vertical-button-bar {
+    height: 100%;
+    margin:0px;
+}
+
+.gameplay-tables-container {
+    padding: 30px 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.gameplay-combination-table-input tr:last-child td {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    background: linear-gradient(90deg, rgba(255, 122, 194, 0.075) 0%, rgba(255, 122, 194, 0) 15%, rgba(255, 122, 194, 0) 85%, rgba(255, 122, 194, 0.075) 100%),
+        linear-gradient(0deg, rgba(255, 122, 194, 0.075) 0%, rgba(255, 122, 194, 0) 15%, rgba(255, 122, 194, 0) 85%, rgba(255, 122, 194, 0.075) 100%);
+}
+
+.gameplay-combination-table-input tr:last-child td:hover {
+    background: linear-gradient(90deg, rgba(0, 139, 139, 0.075) 0%, rgba(0, 139, 139, 0) 15%, rgba(0, 139, 139, 0) 85%, rgba(0, 139, 139, 0.075) 100%),
+        linear-gradient(0deg, rgba(0, 139, 139, 0.075) 0%, rgba(0, 139, 139, 0) 15%, rgba(0, 139, 139, 0) 85%, rgba(0, 139, 139, 0.075) 100%);
+}

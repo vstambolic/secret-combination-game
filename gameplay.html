@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Secret Combination Game</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body id="gameplay">
+
+    <!--Kalomira - My Secret Combination (Greece) Live 2008.mp3 playing softly in the background-->
+    <h1 class="text shadow-cyan page-title pink-text">Find Secret Combination</h1>
+
+    <div class="table-segment-container">
+        <!-- Player 1 segment -->
+        <div id="play-segment-1" class="table-segment">
+            <!-- Tables region-->
+            <div class="text shadow-cyan gameplay-tables-container">
+                <table class="combination-table gameplay-combination-table-input">
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                </table>
+                <table class="combination-table combination-table-success">
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+        </div>
+        <!-- Player 2 segment -->
+        <div id="play-segment-2" class="table-segment">
+            <!-- Tables region-->
+            <div class="text shadow-cyan gameplay-tables-container">
+                <table class="combination-table gameplay-combination-table-input">
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                </table>
+                <table class="combination-table combination-table-success">
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Controls-->
+
+    <div class="control-segment-container">
+        <div class="control-segment">
+            <div>
+                <table class="combination-table symbol-set">
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol symbol-pink">
+                            <img class="symbol symbol-cyan">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol symbol-pink">
+                            <img class="symbol symbol-cyan">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol  symbol-pink">
+                            <img class="symbol symbol-cyan">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol  symbol-pink">
+                            <img class="symbol symbol-cyan">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol  symbol-pink">
+                            <img class="symbol symbol-cyan">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol  symbol-pink">
+                            <img class="symbol symbol-cyan">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="vertical-button-bar">
+                <button disabled class="sumbitButton">Sumbit</button>
+                <button disabled class="clearButton">Clear</button>
+            </div>
+        </div>
+
+        <div id="central-control-button-wrapper">
+            <div class="vertical-button-bar">
+                <button id="gameplay-start-button" >Start</button>
+                <button id="gameplay-new-game-button">New Game</button>
+            </div>
+        </div>
+
+
+
+
+        <div class="control-segment">
+            <div>
+                <table class="combination-table symbol-set">
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol symbol-pink">
+                            <img class="symbol symbol-cyan">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol symbol-pink">
+                            <img class="symbol symbol-cyan">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol symbol-pink">
+                            <img class="symbol symbol-cyan">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol symbol-pink">
+                            <img class="symbol symbol-cyan">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol symbol-pink">
+                            <img class="symbol symbol-cyan">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol symbol-pink">
+                            <img class="symbol symbol-cyan">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="vertical-button-bar">
+                <button disabled class="sumbitButton">Sumbit</button>
+                <button disabled class="clearButton">Clear</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Status-->
+
+    <div class="player-status-segment-container">
+
+        <!-- Player status -->
+        <div class="text pale-text player-status">
+            <span class="player-status-message">
+                Player one's turn.
+            </span>
+            <span class="timer">
+                Timer: <span class="timer-value">60.00</span>
+            </span>
+        </div>
+
+
+        <!-- Player status -->
+        <div class="text pale-text player-status">
+            <span class="player-status-message">
+                Player two's turn.
+            </span>
+            <span class="timer">
+                Timer: <span class="timer-value">60.00</span>
+            </span>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

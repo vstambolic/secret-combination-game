@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Instructions</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+</head>
+
+<body id="instructions">
+
+    <div class="container">
+        <h1 class="text shadow-cyan page-title pink-text">Instructions</h1>
+        <div class="text shadow-cyan content">
+            <p>
+                <span class="pink-text">Secret Combination Game</span> is a two-player logical crack-the-code game. Each
+                player must find
+                the right sequence of 4 symbols which was set by the other player. Players get 7 guesses each to find
+                the
+                right sequence. For each try, player gets the information about how many of the symbols were guessed
+                right and
+                placed on the correct position (<span class="red-text">red block</span>) and how many of the symbols
+                were guessed right,
+                but on the wrong position (<span class="yellow-text">yellow block</span>).
+            </p>
+            <p>
+                In the following example it is indicated that three of the symbols were guessed right, two of which
+                placed
+                on the right position and one on the wrong:
+            </p>
+
+            <div id="example">
+                <table class="combination-table">
+                    <tr>
+                        <td class="combination-td">
+                            <img class="symbol" src="resources/diamonds-cyan.png">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol" src="resources/spades-cyan.png">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol" src="resources/hearts-cyan.png">
+                        </td>
+                        <td class="combination-td">
+                            <img class="symbol" src="resources/clubs-cyan.png">
+
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="combination-table">
+                    <tr>
+                        <td class="combination-td combination-td-success-red">
+                            <div class="success-block  red-block">
+                            </div>
+                        </td>
+                        <td class="combination-td combination-td-success-red">
+                            <div class="success-block  red-block">
+                            </div>
+                        </td>
+                        <td class="combination-td combination-td-success-yellow">
+                            <div class="success-block  yellow-block">
+                            </div>
+                        </td>
+                        <td class="combination-td"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <p>
+                Before the game starts, players set up the combination of 4 symbols from a set of 6 distinct symbols for
+                each other.
+                Repetition is allowed. When both of the players finish setting up the combination, the game can start.
+            </p>
+            <p>
+                Each player has 60 seconds to find the right combination. As the game flows, players take turns guessing
+                their combination
+                by choosing 4 out of the set of 6 symbols. After getting the information about how successful his
+                guess
+                was,
+                the player's timer pauses and the other player continues with his turn. The winner is the first
+                player
+                who finds the right combination. If neither of the players finds the right combination after the 7th
+                try,
+                the game is a draw.
+                If the time runs out for one of the players, the player who still has time left wins.
+            </p>
+            <div class="button-bar">
+                <button id="instructionsReadButton">
+                    Continue
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
